@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 2%;
+    border: 1px  black solid ;
+    min-width: 300px;
+    background-color: rgb(0, 0, 0);
+}
+
+nav{
+     display: flex;
+     text-align: center;
+     padding: 1%;
+}
+
+.karatepng{
+    width: 80px;
+    height: 75px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 280px;
+    flex-wrap: wrap;
+}
+
+li{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li:hover{
+    color: white;
+    background-color: rgb(144, 0, 0);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+article{
+    border: 1px black solid;
+    margin: 2%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+section{
+    display: flex;
+    min-width: 250px;
+}
+
+
+.containerDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    min-width: 200px;
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.div2{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.texto{
+    margin: 40px;
+    
+}
+
+.video{
+    display: flex;
+    min-width: 200px;
+    min-height: 300px;
+    width: 640px;
+    height: 480px;
+}
+
+footer{
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    border: 1px black solid;
+    margin: 2%;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    background-color: black;
+}
+
+.logos{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+
+}
+
+@media (max-width: 1350px){
+    section{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 677px){
+    .video{
+        width: 300px;
+        height: 280px; 
+    }
+
+    nav{
+        display: none;
+    }
+    .karatepng{
+        display: none;
+    }
+
+    li{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    i{
+        color: white;
+        font-size: 27px;
+    }
+
+    .nav-bar{
+        background-color: black;
+        padding: 20px;
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    ul{
+        flex-direction: column;
+    }
+
+    .mostrar{
+        display: flex;
+    }
+}
+
+
+@media (max-width: 390px){
+    .video{
+        width: 200px;
+        height: 200px;
+    }
+
+    .logo{
+       width: 30px;
+       height: 30px;
+    }
+
+
+}
